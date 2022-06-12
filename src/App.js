@@ -1,22 +1,34 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react'
+import Envios from './components/Envios';
 import './App.css';
 
 function App() {
+
+  const [envios, setEnvios] = useState([])
+
+  useEffect(() => {
+    const getEnvios = async () => {
+      const EnviosFromServer = await fetchEnvios()
+      setEnvios(EnviosFromServer)
+    }
+    getEnvios()
+  }, [])
+
+  const fetchEnvios = async () => {
+    const res = await fetch('http://localhost:5001/envios')
+    const data = await res.json()
+    return data
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          pedidos
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="Envios" >
+          <Envios envios={envios}></Envios>
+        </div>
       </header>
     </div>
   );

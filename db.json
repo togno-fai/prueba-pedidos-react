@@ -1,0 +1,50 @@
+{
+  "envios": [
+    {
+      "id": 1,
+      "dir": "san martin 600",
+      "wame": "wa.me/5492996732139",
+      "items": [
+        {
+          "cant": 1,
+          "prod": "fernet",
+          "precio": 1300
+        },{
+          "cant": 1,
+          "prod": "coca",
+          "precio": 400
+        }
+      ],
+      "envio": 200,
+      "total": 1600
+    },
+    {
+      "id": 2,
+      "dir": "av arg 50",
+      "wame": "wa.me/5492994646353",
+      "items": [
+        {
+          "cant": 1,
+          "prod": "quilmes",
+          "precio": 1000
+        }
+      ],
+      "envio": 100,
+      "total": 1000
+    },
+    {
+      "id": 3,
+      "dir": "cinco saltos",
+      "wame": "wa.me/5492996588098",
+      "items": [
+        {
+          "cant": 1,
+          "prod": "benjamin",
+          "precio": 800
+        }
+      ],
+      "envio": 500,
+      "total": 800
+    }
+  ]
+}

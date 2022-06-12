@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +9,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Envios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #94961d;
+  padding: .2em 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Envio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: .1em .1em .1em #4d136e;
+  border-radius: 0.3em;
+  background-color: #be8ddb;
+  margin: .5em;
+  padding: .3em;
+}
+
+
+.Envio>* {
+  display: flex;
+  flex-direction: row;
+  box-shadow: .1em .1em .1em #003521;
+  border-radius: 0.2em;
+  background-color: #636363;
+  margin: .3em;
+  padding: .1em .4em;
+  height: fit-content;
+}
+.InputCant{
+  width: 3em;
+}
+.InputPrecio{
+  width: 5em;
+}
+.InputProducto{
+  font-size:xx-small;
+  width: 8em;
+  height: .1em;
 }

@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Select {
+  color:black;
+}
+
+.AddItemEnvio{
+  display: flex;
+  width: fit-content;
+}
+.AddItemEnvio *{
+}
